@@ -50,6 +50,15 @@ class PhpSecInfo_Test_Core_Version extends PhpSecInfo_Test_Core
 	 * @return string
 	 */
 	 public function _retrieveCurrentVersions() {
+	 	if (!function_exists('curl_init')) {
+				// Override the OK Message - Even if this passes we can't be 100% sure they are accurate since we didn't fetch the latest version
+				$this->_message_ok = "You are running a current stable version of PHP!
+						<br /><strong>NOTE:</strong> CURL was unable to fetch the latest PHP Versions from the internet. This test may not be accurate if
+						PhpSecInfo is not up to date.";
+				
+				return array( 'stable' => $this->recommended_value, 'eol' => $this->last_eol_value);
+	 	}
+	 	
 	 		// Attempt to fetch from server
 	 		$uri = 'https://www.gcosoftware.com/current_version.php?system=php';
 	 		$ch = curl_init();
