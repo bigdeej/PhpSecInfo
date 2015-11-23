@@ -30,7 +30,7 @@ define ('PHPSECINFO_BUILD', '2015.12.1');
  * Homepage for phpsecinfo project
  *
  */
-define ('PHPSECINFO_URL', 'http://phpsecinfo.gcosoftware.com');
+define ('PHPSECINFO_URL', 'http://phpsec.gcosoftware.com');
 
 /**
  * This is the main class for the phpsecinfo system.  It's responsible for
