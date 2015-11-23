@@ -295,7 +295,7 @@ class PhpSecInfo_Test
 	 */
     function getMoreInfoURL() {
         if ($tn = $this->getTestName()) {
-            return PHPSECINFO_TEST_MOREINFO_BASEURL.strtolower("{$tn}.html");
+            return PHPSECINFO_TEST_MOREINFO_BASEURL.strtolower($tn);
         } else {
             return false;
         }
