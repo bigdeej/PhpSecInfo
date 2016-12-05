@@ -1,3 +1,8 @@
+v2.0.2 (Dec 5, 2016)
+- Updated PHP Version Test
+- Added PHP7 Support for Version Test
+
+
 v2.0.1a (Dec 1, 2015)
 - New development team - FORK see GitHub below
 - Removed PHP4 Support

@@ -18,13 +18,13 @@ define ('PHPSECINFO_LANG_DEFAULT', 'en');
  * a general version string to differentiate releases
  *
  */
-define ('PHPSECINFO_VERSION', '2.0.1a');
+define ('PHPSECINFO_VERSION', '2.0.2');
 
 /**
  * a YYYY.MM.DD date string to indicate "build" date
  *
  */
-define ('PHPSECINFO_BUILD', '2015.12.1');
+define ('PHPSECINFO_BUILD', '2016.12.5');
 
 /**
  * Homepage for phpsecinfo project
